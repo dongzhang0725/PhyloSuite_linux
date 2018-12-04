@@ -1,0 +1,76 @@
+#nexus
+begin sets;
+  charset atp6_mafft_gb = 1-480;
+  charset cox1_mafft_gb = 481-2001;
+  charset cox2_mafft_gb = 2002-2544;
+  charset cox3_mafft_gb = 2545-3153;
+  charset cytb_mafft_gb = 3154-4206;
+  charset nad1_mafft_gb = 4207-5082;
+  charset nad2_mafft_gb = 5083-5868;
+  charset nad3_mafft_gb = 5869-6198;
+  charset nad4_mafft_gb = 6199-7377;
+  charset nad4L_mafft_gb = 7378-7626;
+  charset nad5_mafft_gb = 7627-9042;
+  charset nad6_mafft_gb = 9043-9471;
+  charset rrnL_mafft_gb = 9472-10215;
+  charset rrnS_mafft_gb = 10216-10684;
+  charset trnA_mafft = 10685-10808;
+  charset trnC_mafft = 10809-10910;
+  charset trnD_mafft = 10911-11027;
+  charset trnE_mafft = 11028-11123;
+  charset trnF_mafft = 11124-11212;
+  charset trnG_mafft = 11213-11307;
+  charset trnH_mafft = 11308-11402;
+  charset trnI_mafft = 11403-11481;
+  charset trnK_mafft = 11482-11572;
+  charset trnL1_mafft = 11573-11662;
+  charset trnL2_mafft = 11663-11743;
+  charset trnM_mafft = 11744-11830;
+  charset trnN_mafft = 11831-11929;
+  charset trnP_mafft = 11930-12027;
+  charset trnQ_mafft = 12028-12112;
+  charset trnR_mafft = 12113-12206;
+  charset trnS1_mafft = 12207-12294;
+  charset trnS2_mafft = 12295-12425;
+  charset trnT_mafft = 12426-12541;
+  charset trnV_mafft = 12542-12625;
+  charset trnW_mafft = 12626-12702;
+  charset trnY_mafft = 12703-12816;
+  charpartition mymodels =
+    GTR+F+R6: atp6_mafft_gb,
+    GTR+F+R7: cox1_mafft_gb,
+    GTR+F+R7: cox2_mafft_gb,
+    TVM+F+R6: cox3_mafft_gb,
+    GTR+F+R7: cytb_mafft_gb,
+    TVM+F+R7: nad1_mafft_gb,
+    GTR+F+R6: nad2_mafft_gb,
+    GTR+F+I+G4: nad3_mafft_gb,
+    GTR+F+R6: nad4_mafft_gb,
+    TVM+F+I+G4: nad4L_mafft_gb,
+    TVM+F+R7: nad5_mafft_gb,
+    TVM+F+R7: nad6_mafft_gb,
+    GTR+F+R5: rrnL_mafft_gb,
+    TIM3+F+R6: rrnS_mafft_gb,
+    TPM3u+F+I+G4: trnA_mafft,
+    TIM3+F+I+G4: trnC_mafft,
+    TPM3u+F+I+G4: trnD_mafft,
+    TIM3+F+G4: trnE_mafft,
+    HKY+F+I+G4: trnF_mafft,
+    TVM+F+I+G4: trnG_mafft,
+    K3Pu+F+G4: trnH_mafft,
+    GTR+F+I+G4: trnI_mafft,
+    TPM3+F+G4: trnK_mafft,
+    TVM+F+G4: trnL1_mafft,
+    TIM3+F+G4: trnL2_mafft,
+    TPM3+F+I+G4: trnM_mafft,
+    TIM3+F+G4: trnN_mafft,
+    TIM2+F+I+G4: trnP_mafft,
+    TVM+F+I+G4: trnQ_mafft,
+    GTR+F+I+G4: trnR_mafft,
+    TIM3+F+G4: trnS1_mafft,
+    TIM3+F+I+G4: trnS2_mafft,
+    HKY+F+I+G4: trnT_mafft,
+    TIM3+F+G4: trnV_mafft,
+    TPM3+F+G4: trnW_mafft,
+    TPM3+F+G4: trnY_mafft;
+end;

@@ -1,5 +1,32 @@
 # Release Note
 
+## PhyloSuite v1.1.153 (2019-05-17, Sun, <font color="red">BUG fix for v1.1.15</font>)
++ Fixed a bug that caused PhyloSuite to crash on MAC and Linux
+    + Added test run
+    + Added strand-specific statistics to mitogenome extraction function 
+    + Fixed bugs in the 'Extract' function
+    + Fixed a bug that caused Gblocks to crash
+    + Canceled "+R" when calculating the best-fit model for BEAST
+    + Added an exclusion function when customizing taxonomy recognition
+    + Fixed a bug that caused incompatibility issues with MrBayes 3.2.7
+    + Added rename, drag and drop functions for the file explorer in the main page of PhyloSuite
+    + Added a function to extract chloroplast genome (thanks to Dr. Kai-Kai Meng)
+    + Made a homepage for PhyloSuite (https://dongzhang0725.github.io)
+    + Added a funtion to clear "misc_feature" in "Standardization" function
+    + Fixed a bug that caused IQ-TREE and MrBayes to fail recognizing the outgroup
+    + Added a function to draw a linear figure in "Concatenation"
+    + Added the ability to allow mutiple results of each function, instead of overwriting them 
+    + Added a function to reconstruct phylogenetic trees in batches using IQ-TREE 
+    + Added a function to search sequences in the nucleotide and protein databases of NCBI
+    + Optimized and upgraded the function of input files into PhyloSuite, see https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/
+    + Added a multi-thread MrBayes run option to the Linux version
+    + Enabled the Flowchart function to save different settings as workflow
+    + Allowed spaces in the software and workplace paths
+    + Changed the interfaces of some functions
+    + Enabled MrBayes to infer the tree at any generation
+    + Enabled user to customize the sequence name when extracting sequence
+
+
 ## PhyloSuite v1.1.152 (2019-05-12, Sun, <font color="red">BUG fix</font>)
 + Added test run
 + Added strand-specific statistics to mitogenome extraction function 
@@ -24,6 +51,7 @@
     + Changed the interfaces of some functions
     + Enabled MrBayes to infer the tree at any generation
     + Enabled user to customize the sequence name when extracting sequence
+
 
 ## PhyloSuite v1.1.151 (2019-03-28, Thu, <font color="red">BUG fix</font>)
 + Added compiled PartitionFinder2 (MAC and Window only), which doesn't rely on Python 2.7 any more
